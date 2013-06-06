@@ -3,7 +3,7 @@ Ethernet Extension
 
 This repository contains the hardware design files. 
 The software is included in the Master Brick software
-and can be found at https://github.com/Tinkerforge/master-brick
+and can be found at https://github.com/Tinkerforge/ethernet-extension
 
 Repository Content
 ------------------
