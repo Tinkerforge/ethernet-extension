@@ -1,4 +1,4 @@
-update=Do 20 Jul 2017 10:30:17 CEST
+update=Do 03 Aug 2017 14:43:22 CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -51,9 +51,19 @@ LibName14=lala
 LibName15=WEEE_7mm
 LibName16=CE_5mm
 LibName17=CE_3mm
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
-LibDir=kicad-libraries.pretty
+LibDir=kicad-libraries
 [eeschema/libraries]
 LibName1=tinkerforge
 LibName2=power
@@ -86,13 +96,3 @@ LibName28=opto
 LibName29=atmel
 LibName30=contrib
 LibName31=valves
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60

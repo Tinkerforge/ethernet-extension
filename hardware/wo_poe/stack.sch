@@ -11,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -439,7 +438,7 @@ U 1 1 4CC046A4
 P 6300 2650
 F 0 "R14" V 6380 2650 50  0000 C CNN
 F 1 "1k" V 6300 2650 50  0000 C CNN
-F 2 "kicad-libraries:0603" H 6300 2650 60  0001 C CNN
+F 2 "kicad-libraries:R0603" H 6300 2650 60  0001 C CNN
 F 3 "" H 6300 2650 60  0001 C CNN
 	1    6300 2650
 	1    0    0    -1  
