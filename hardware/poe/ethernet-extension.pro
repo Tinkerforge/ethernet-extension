@@ -1,4 +1,4 @@
-update=Do 20 Jul 2017 10:28:57 CEST
+update=Do 03 Aug 2017 16:05:28 CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -33,9 +33,19 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.15
 BoardOutlineThickness=0.09906
 ModuleOutlineThickness=0.15
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
-LibDir=kicad-libraries.pretty
+LibDir=../../../rs485-extension/hardware/kicad-libraries
 [eeschema/libraries]
 LibName1=tinkerforge
 LibName2=power
@@ -68,13 +78,3 @@ LibName28=opto
 LibName29=atmel
 LibName30=contrib
 LibName31=valves
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
