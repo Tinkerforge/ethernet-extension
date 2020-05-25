@@ -1,35 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:tinkerforge
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -286,7 +256,7 @@ Wire Wire Line
 Wire Wire Line
 	4700 4100 5000 4100
 $Comp
-L GND #PWR049
+L tinkerforge:GND #PWR049
 U 1 1 50A4E7D2
 P 10250 2500
 F 0 "#PWR049" H 10250 2500 30  0001 C CNN
@@ -297,7 +267,7 @@ F 3 "" H 10250 2500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C42
+L tinkerforge:C C42
 U 1 1 50A4E7C3
 P 10250 1850
 F 0 "C42" V 10300 1950 50  0000 L CNN
@@ -310,7 +280,7 @@ $EndComp
 NoConn ~ 5650 3500
 NoConn ~ 5650 3600
 $Comp
-L LTC4267D U3
+L tinkerforge:LTC4267D U3
 U 1 1 50A4A373
 P 4900 3150
 F 0 "U3" H 4350 3950 60  0000 C CNN
@@ -321,7 +291,7 @@ F 3 "" H 4900 3150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DIODE D4
+L tinkerforge:DIODE D4
 U 1 1 50A3CE10
 P 3750 3000
 F 0 "D4" H 3750 3100 40  0000 C CNN
@@ -332,7 +302,7 @@ F 3 "" H 3750 3000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR050
+L tinkerforge:GND #PWR050
 U 1 1 50A3C939
 P 8250 6350
 F 0 "#PWR050" H 8250 6350 30  0001 C CNN
@@ -343,7 +313,7 @@ F 3 "" H 8250 6350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TLV431 D9
+L tinkerforge:TLV431 D9
 U 1 1 50A3C92A
 P 8250 5650
 F 0 "D9" H 8350 5850 60  0000 C CNN
@@ -354,7 +324,7 @@ F 3 "" H 8250 5650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR051
+L tinkerforge:GND #PWR051
 U 1 1 50A3C71B
 P 9400 6350
 F 0 "#PWR051" H 9400 6350 30  0001 C CNN
@@ -365,7 +335,7 @@ F 3 "" H 9400 6350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R27
+L tinkerforge:R R27
 U 1 1 50A3C716
 P 9400 6000
 F 0 "R27" V 9480 6000 50  0000 C CNN
@@ -376,7 +346,7 @@ F 3 "" H 9400 6000 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R26
+L tinkerforge:R R26
 U 1 1 50A3C6DB
 P 9400 4900
 F 0 "R26" V 9480 4900 50  0000 C CNN
@@ -387,7 +357,7 @@ F 3 "" H 9400 4900 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C38
+L tinkerforge:C C38
 U 1 1 50A3C6C3
 P 8850 5150
 F 0 "C38" V 9000 5100 50  0000 L CNN
@@ -398,7 +368,7 @@ F 3 "" H 8850 5150 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R25
+L tinkerforge:R R25
 U 1 1 50A3C6AC
 P 8850 4650
 F 0 "R25" V 8930 4650 50  0000 C CNN
@@ -409,7 +379,7 @@ F 3 "" H 8850 4650 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L DIODESCH D10
+L tinkerforge:DIODESCH D10
 U 1 1 50A3C68C
 P 8550 1600
 F 0 "D10" H 8550 1700 40  0000 C CNN
@@ -420,7 +390,7 @@ F 3 "" H 8550 1600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C39
+L tinkerforge:C C39
 U 1 1 50A3C65A
 P 9000 1250
 F 0 "C39" V 9150 1200 50  0000 L CNN
@@ -431,7 +401,7 @@ F 3 "" H 9000 1250 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R24
+L tinkerforge:R R24
 U 1 1 50A3C654
 P 8500 1250
 F 0 "R24" V 8580 1250 50  0000 C CNN
@@ -442,7 +412,7 @@ F 3 "" H 8500 1250 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L VAA #PWR052
+L tinkerforge:VAA #PWR052
 U 1 1 50A3C537
 P 6200 2300
 F 0 "#PWR052" H 6200 2360 30  0001 C CNN
@@ -453,7 +423,7 @@ F 3 "" H 6200 2300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AGND #PWR053
+L tinkerforge:AGND #PWR053
 U 1 1 50A3C3AC
 P 7000 6350
 F 0 "#PWR053" H 7000 6350 40  0001 C CNN
@@ -464,7 +434,7 @@ F 3 "" H 7000 6350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VAA #PWR054
+L tinkerforge:VAA #PWR054
 U 1 1 50A3C392
 P 6950 4150
 F 0 "#PWR054" H 6950 4210 30  0001 C CNN
@@ -475,7 +445,7 @@ F 3 "" H 6950 4150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R21
+L tinkerforge:R R21
 U 1 1 50A3C38A
 P 6950 4500
 F 0 "R21" V 7030 4500 50  0000 C CNN
@@ -486,7 +456,7 @@ F 3 "" H 6950 4500 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R18
+L tinkerforge:R R18
 U 1 1 50A3C32F
 P 6200 2600
 F 0 "R18" V 6280 2600 50  0000 C CNN
@@ -497,7 +467,7 @@ F 3 "" H 6200 2600 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R17
+L tinkerforge:R R17
 U 1 1 50A3C318
 P 6150 3350
 F 0 "R17" V 6230 3350 50  0000 C CNN
@@ -508,7 +478,7 @@ F 3 "" H 6150 3350 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L AGND #PWR055
+L tinkerforge:AGND #PWR055
 U 1 1 50A3C30A
 P 6000 4300
 F 0 "#PWR055" H 6000 4300 40  0001 C CNN
@@ -519,7 +489,7 @@ F 3 "" H 6000 4300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DIODE D5
+L tinkerforge:DIODE D5
 U 1 1 50A3C2FA
 P 6000 3950
 F 0 "D5" H 6000 4050 40  0000 C CNN
@@ -530,7 +500,7 @@ F 3 "" H 6000 3950 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L AGND #PWR056
+L tinkerforge:AGND #PWR056
 U 1 1 50A3C2F4
 P 6450 4300
 F 0 "#PWR056" H 6450 4300 40  0001 C CNN
@@ -541,7 +511,7 @@ F 3 "" H 6450 4300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DIODE D8
+L tinkerforge:DIODE D8
 U 1 1 50A3C2E8
 P 6800 3300
 F 0 "D8" H 6800 3400 40  0000 C CNN
@@ -552,7 +522,7 @@ F 3 "" H 6800 3300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MOSFET_N_CH Q1
+L tinkerforge:MOSFET_N_CH Q1
 U 1 1 50A3C2B3
 P 6350 3650
 F 0 "Q1" H 6360 3820 60  0000 R CNN
@@ -563,7 +533,7 @@ F 3 "" H 6350 3650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AGND #PWR057
+L tinkerforge:AGND #PWR057
 U 1 1 50A3C139
 P 5750 4300
 F 0 "#PWR057" H 5750 4300 40  0001 C CNN
@@ -574,7 +544,7 @@ F 3 "" H 5750 4300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OPTO-TRANSISTOR4 U4
+L tinkerforge:OPTO-TRANSISTOR4 U4
 U 1 1 50A3C0E1
 P 7600 4900
 F 0 "U4" H 7800 5150 60  0000 C CNN
@@ -585,7 +555,7 @@ F 3 "" H 7600 4900 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR058
+L tinkerforge:+5V #PWR058
 U 1 1 5060B10D
 P 10950 1500
 F 0 "#PWR058" H 10950 1590 20  0001 C CNN
@@ -596,7 +566,7 @@ F 3 "" H 10950 1500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VAA #PWR059
+L tinkerforge:VAA #PWR059
 U 1 1 50608106
 P 5800 1950
 F 0 "#PWR059" H 5800 2010 30  0001 C CNN
@@ -607,7 +577,7 @@ F 3 "" H 5800 1950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR060
+L tinkerforge:GND #PWR060
 U 1 1 505F35F3
 P 9250 2500
 F 0 "#PWR060" H 9250 2500 30  0001 C CNN
@@ -618,7 +588,7 @@ F 3 "" H 9250 2500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C41
+L tinkerforge:C C41
 U 1 1 505F35F2
 P 9250 1800
 F 0 "C41" V 9300 1900 50  0000 L CNN
@@ -629,7 +599,7 @@ F 3 "" H 9250 1800 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C40
+L tinkerforge:C C40
 U 1 1 505F35EE
 P 9000 1800
 F 0 "C40" V 9050 1900 50  0000 L CNN
@@ -640,7 +610,7 @@ F 3 "" H 9000 1800 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR061
+L tinkerforge:GND #PWR061
 U 1 1 505F35ED
 P 9000 2500
 F 0 "#PWR061" H 9000 2500 30  0001 C CNN
@@ -651,7 +621,7 @@ F 3 "" H 9000 2500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ZENER D3
+L tinkerforge:ZENER D3
 U 1 1 505C8BDE
 P 2500 5000
 F 0 "D3" H 2500 5100 50  0000 C CNN
@@ -662,7 +632,7 @@ F 3 "" H 2500 5000 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R22
+L tinkerforge:R R22
 U 1 1 505C893C
 P 7100 1700
 F 0 "R22" V 7180 1700 50  0000 C CNN
@@ -673,7 +643,7 @@ F 3 "" H 7100 1700 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C35
+L tinkerforge:C C35
 U 1 1 505C8920
 P 7100 2200
 F 0 "C35" V 7250 2150 50  0000 L CNN
@@ -684,7 +654,7 @@ F 3 "" H 7100 2200 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C36
+L tinkerforge:C C36
 U 1 1 505C86A3
 P 7600 6150
 F 0 "C36" V 7450 6100 50  0000 L CNN
@@ -695,7 +665,7 @@ F 3 "" H 7600 6150 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR062
+L tinkerforge:GND #PWR062
 U 1 1 505C863E
 P 7850 6350
 F 0 "#PWR062" H 7850 6350 30  0001 C CNN
@@ -706,7 +676,7 @@ F 3 "" H 7850 6350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AGND #PWR063
+L tinkerforge:AGND #PWR063
 U 1 1 505C863B
 P 7350 6350
 F 0 "#PWR063" H 7350 6350 40  0001 C CNN
@@ -717,7 +687,7 @@ F 3 "" H 7350 6350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR064
+L tinkerforge:GND #PWR064
 U 1 1 505C862C
 P 8750 2500
 F 0 "#PWR064" H 8750 2500 30  0001 C CNN
@@ -728,7 +698,7 @@ F 3 "" H 8750 2500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DIODESCH D12
+L tinkerforge:DIODESCH D12
 U 1 1 505C8621
 P 10750 1600
 F 0 "D12" H 10750 1700 40  0000 C CNN
@@ -739,7 +709,7 @@ F 3 "" H 10750 1600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C37
+L tinkerforge:C C37
 U 1 1 505C8509
 P 8750 1800
 F 0 "C37" V 8800 1900 50  0000 L CNN
@@ -750,7 +720,7 @@ F 3 "" H 8750 1800 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR065
+L tinkerforge:GND #PWR065
 U 1 1 505C8468
 P 8150 2500
 F 0 "#PWR065" H 8150 2500 30  0001 C CNN
@@ -761,7 +731,7 @@ F 3 "" H 8150 2500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L EFD15 T1
+L tinkerforge:EFD15 T1
 U 5 1 505C83BA
 P 7700 2200
 F 0 "T1" H 7700 1950 60  0000 C CNN
@@ -772,7 +742,7 @@ F 3 "" H 7700 2200 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L EFD15 T1
+L tinkerforge:EFD15 T1
 U 4 1 505C83B3
 P 7700 1700
 F 0 "T1" H 7700 1500 60  0000 C CNN
@@ -783,7 +753,7 @@ F 3 "" H 7700 1700 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L EFD15 T1
+L tinkerforge:EFD15 T1
 U 3 1 505C83A4
 P 7700 1200
 F 0 "T1" H 7700 950 60  0000 C CNN
@@ -794,7 +764,7 @@ F 3 "" H 7700 1200 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L EFD15 T1
+L tinkerforge:EFD15 T1
 U 1 1 505C839A
 P 7300 950
 F 0 "T1" H 7300 700 60  0000 C CNN
@@ -805,7 +775,7 @@ F 3 "" H 7300 950 60  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L EFD15 T1
+L tinkerforge:EFD15 T1
 U 2 1 505C8376
 P 7400 1750
 F 0 "T1" H 7390 1905 60  0000 C CNN
@@ -816,7 +786,7 @@ F 3 "" H 7400 1750 60  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L R R16
+L tinkerforge:R R16
 U 1 1 505C80B4
 P 5950 3000
 F 0 "R16" V 6030 3000 50  0000 C CNN
@@ -827,7 +797,7 @@ F 3 "" H 5950 3000 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R23
+L tinkerforge:R R23
 U 1 1 505C8081
 P 7200 3750
 F 0 "R23" V 7280 3750 50  0000 C CNN
@@ -838,7 +808,7 @@ F 3 "" H 7200 3750 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AGND #PWR066
+L tinkerforge:AGND #PWR066
 U 1 1 505C807D
 P 7200 4300
 F 0 "#PWR066" H 7200 4300 40  0001 C CNN
@@ -849,7 +819,7 @@ F 3 "" H 7200 4300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L FDC2512 Q3
+L tinkerforge:FDC2512 Q3
 U 1 1 505C804B
 P 7100 2700
 F 0 "Q3" H 7350 2650 40  0000 C CNN
@@ -861,7 +831,7 @@ F 3 "" H 7100 2700 60  0001 C CNN
 $EndComp
 NoConn ~ 5650 3700
 $Comp
-L AGND #PWR067
+L tinkerforge:AGND #PWR067
 U 1 1 505C7ED6
 P 4700 4300
 F 0 "#PWR067" H 4700 4300 40  0001 C CNN
@@ -872,7 +842,7 @@ F 3 "" H 4700 4300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AGND #PWR068
+L tinkerforge:AGND #PWR068
 U 1 1 505C7EAF
 P 6750 2400
 F 0 "#PWR068" H 6750 2400 40  0001 C CNN
@@ -883,7 +853,7 @@ F 3 "" H 6750 2400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ZENER D7
+L tinkerforge:ZENER D7
 U 1 1 505C7E93
 P 6750 2100
 F 0 "D7" H 6750 2200 50  0000 C CNN
@@ -894,7 +864,7 @@ F 3 "" H 6750 2100 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R20
+L tinkerforge:R R20
 U 1 1 505C7E60
 P 6750 1600
 F 0 "R20" V 6830 1600 50  0000 C CNN
@@ -905,7 +875,7 @@ F 3 "" H 6750 1600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MMBTA42 Q2
+L tinkerforge:MMBTA42 Q2
 U 1 1 505C7E4A
 P 6500 1850
 F 0 "Q2" H 6550 2000 50  0000 R CNN
@@ -916,7 +886,7 @@ F 3 "" H 6500 1850 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L AGND #PWR069
+L tinkerforge:AGND #PWR069
 U 1 1 505C7B32
 P 5800 2550
 F 0 "#PWR069" H 5800 2550 40  0001 C CNN
@@ -927,7 +897,7 @@ F 3 "" H 5800 2550 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C34
+L tinkerforge:C C34
 U 1 1 505C7B2C
 P 5800 2250
 F 0 "C34" V 5850 2350 50  0000 L CNN
@@ -938,7 +908,7 @@ F 3 "" H 5800 2250 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L DIODE D6
+L tinkerforge:DIODE D6
 U 1 1 505C7AF6
 P 6150 2050
 F 0 "D6" H 6150 2150 40  0000 C CNN
@@ -949,7 +919,7 @@ F 3 "" H 6150 2050 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R15
+L tinkerforge:R R15
 U 1 1 505C7AD3
 P 5500 1700
 F 0 "R15" V 5580 1700 50  0000 C CNN
@@ -960,7 +930,7 @@ F 3 "" H 5500 1700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C33
+L tinkerforge:C C33
 U 1 1 505C7974
 P 4950 1700
 F 0 "C33" V 5000 1800 50  0000 L CNN
@@ -971,7 +941,7 @@ F 3 "" H 4950 1700 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L AGND #PWR070
+L tinkerforge:AGND #PWR070
 U 1 1 505C7888
 P 4950 2050
 F 0 "#PWR070" H 4950 2050 40  0001 C CNN
@@ -982,7 +952,7 @@ F 3 "" H 4950 2050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L INDUCTOR L5
+L tinkerforge:INDUCTOR L5
 U 1 1 505C7879
 P 4600 1350
 F 0 "L5" H 4600 1450 40  0000 C CNN
@@ -993,7 +963,7 @@ F 3 "" H 4600 1350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AGND #PWR071
+L tinkerforge:AGND #PWR071
 U 1 1 505C7827
 P 3750 2050
 F 0 "#PWR071" H 3750 2050 40  0001 C CNN
@@ -1004,7 +974,7 @@ F 3 "" H 3750 2050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R14
+L tinkerforge:R R14
 U 1 1 505C7706
 P 3900 3450
 F 0 "R14" V 3980 3450 50  0000 C CNN
@@ -1015,7 +985,7 @@ F 3 "" H 3900 3450 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C28
+L tinkerforge:C C28
 U 1 1 505C6DF0
 P 2500 5300
 F 0 "C28" V 2550 5400 50  0000 L CNN
@@ -1034,7 +1004,7 @@ DATA-
 Text GLabel 950  1450 0    60   Input ~ 0
 DATA+
 $Comp
-L D_Bridge D2
+L tinkerforge:D_Bridge D2
 U 1 1 505C13B8
 P 2500 3650
 F 0 "D2" H 2500 3700 70  0000 C CNN
@@ -1045,7 +1015,7 @@ F 3 "" H 2500 3650 60  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L D_Bridge D1
+L tinkerforge:D_Bridge D1
 U 1 1 505C13B5
 P 2500 1750
 F 0 "D1" H 2500 1800 70  0000 C CNN
@@ -1057,7 +1027,7 @@ F 3 "" H 2500 1750 60  0001 C CNN
 $EndComp
 Connection ~ 4150 3700
 $Comp
-L AGND #PWR072
+L tinkerforge:AGND #PWR072
 U 1 1 510A4716
 P 3500 2050
 F 0 "#PWR072" H 3500 2050 40  0001 C CNN
@@ -1070,7 +1040,7 @@ $EndComp
 NoConn ~ 7200 1050
 NoConn ~ 7200 800 
 $Comp
-L R R19
+L tinkerforge:R R19
 U 1 1 51223C20
 P 6550 2700
 F 0 "R19" V 6630 2700 50  0000 C CNN
@@ -1085,7 +1055,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 2700 5650 2700
 $Comp
-L INDUCTOR L6
+L tinkerforge:INDUCTOR L6
 U 1 1 5124D693
 P 9950 1600
 F 0 "L6" H 9950 1700 40  0000 C CNN
@@ -1107,7 +1077,7 @@ Connection ~ 10250 1600
 Text Notes 9500 1150 0    60   ~ 0
 L = 1/((2*pi*f)**2*C)\n200khz * 1/10 Eckfrequenz = 20khz\n=> 6.33µH
 $Comp
-L LED D11
+L tinkerforge:LED D11
 U 1 1 51262231
 P 10550 1850
 F 0 "D11" H 10550 1950 50  0000 C CNN
@@ -1118,7 +1088,7 @@ F 3 "" H 10550 1850 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R28
+L tinkerforge:R R28
 U 1 1 5126223E
 P 10550 2400
 F 0 "R28" V 10630 2400 50  0000 C CNN
@@ -1129,7 +1099,7 @@ F 3 "" H 10550 2400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR073
+L tinkerforge:GND #PWR073
 U 1 1 51262289
 P 10550 2750
 F 0 "#PWR073" H 10550 2750 30  0001 C CNN
@@ -1147,7 +1117,7 @@ Wire Wire Line
 	10550 1600 10550 1650
 Connection ~ 10550 1600
 $Comp
-L C C29
+L tinkerforge:C C29
 U 1 1 515422AD
 P 3500 1700
 F 0 "C29" V 3550 1800 50  0000 L CNN
@@ -1158,7 +1128,7 @@ F 3 "" H 3500 1700 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C30
+L tinkerforge:C C30
 U 1 1 515422B3
 P 3750 1700
 F 0 "C30" V 3800 1800 50  0000 L CNN
@@ -1169,7 +1139,7 @@ F 3 "" H 3750 1700 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C31
+L tinkerforge:C C31
 U 1 1 51542309
 P 4000 1700
 F 0 "C31" V 4050 1800 50  0000 L CNN
@@ -1180,7 +1150,7 @@ F 3 "" H 4000 1700 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C32
+L tinkerforge:C C32
 U 1 1 5154230F
 P 4250 1700
 F 0 "C32" V 4300 1800 50  0000 L CNN
@@ -1191,7 +1161,7 @@ F 3 "" H 4250 1700 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L AGND #PWR074
+L tinkerforge:AGND #PWR074
 U 1 1 5154231F
 P 4000 2050
 F 0 "#PWR074" H 4000 2050 40  0001 C CNN
@@ -1202,7 +1172,7 @@ F 3 "" H 4000 2050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AGND #PWR075
+L tinkerforge:AGND #PWR075
 U 1 1 51542325
 P 4250 2050
 F 0 "#PWR075" H 4250 2050 40  0001 C CNN
@@ -1235,7 +1205,7 @@ Connection ~ 3500 1350
 Wire Wire Line
 	7300 1350 4900 1350
 $Comp
-L CONN_1 P2
+L tinkerforge:CONN_1 P2
 U 1 1 5425F8B4
 P 5650 4000
 F 0 "P2" H 5730 4000 40  0000 L CNN
