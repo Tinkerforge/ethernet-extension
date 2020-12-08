@@ -1,15 +1,15 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "Ethernet Extension"
-Date "Di 23 Jun 2015"
-Rev "1.1"
+Date "2020-10-12"
+Rev "1.2"
 Comp "Tinkerforge GmbH"
 Comment1 "Licensed under CERN OHL v.1.1"
-Comment2 "Copyright (©) 2015, B.Nordmeyer <bastian@tinkerforge.com>"
+Comment2 "Copyright (©) 2020, B.Nordmeyer <bastian@tinkerforge.com>"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -402,7 +402,7 @@ F0 "Stack" 60
 F1 "stack.sch" 60
 $EndSheet
 Text Notes 4350 7550 0    40   ~ 0
-Copyright Tinkerforge GmbH 2015.\nThis documentation describes Open Hardware and is licensed under the\nCERN OHL v. 1.1.\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.1. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN OHL v.1.1 for applicable\nconditions\n
+Copyright Tinkerforge GmbH 2020.\nThis documentation describes Open Hardware and is licensed under the\nCERN OHL v. 1.1.\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.1. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN OHL v.1.1 for applicable\nconditions\n
 NoConn ~ 9050 6000
 Text GLabel 7850 6100 0    60   Input ~ 0
 SELECT
@@ -999,17 +999,6 @@ SPARE+
 Text GLabel 9300 3800 0    60   Output ~ 0
 SPARE-
 $Comp
-L tinkerforge:GNDPWR #PWR037
-U 1 1 54249617
-P 10450 5000
-F 0 "#PWR037" H 10450 5050 40  0001 C CNN
-F 1 "GNDPWR" H 10450 4920 40  0000 C CNN
-F 2 "" H 10450 5000 60  0000 C CNN
-F 3 "" H 10450 5000 60  0000 C CNN
-	1    10450 5000
-	1    0    0    -1  
-$EndComp
-$Comp
 L tinkerforge:3V3 #PWR038
 U 1 1 54254E46
 P 2500 600
@@ -1039,7 +1028,7 @@ Wire Wire Line
 	2800 6100 2800 5450
 Connection ~ 4000 5950
 Wire Wire Line
-	4000 5900 4000 6100
+	4000 5900 4000 5950
 Connection ~ 5650 5950
 Wire Wire Line
 	5300 5950 5300 6100
@@ -1048,7 +1037,7 @@ Wire Wire Line
 	6350 5950 6250 5950
 Connection ~ 6650 2450
 Wire Wire Line
-	6650 2400 6650 2800
+	6650 2400 6650 2450
 Wire Wire Line
 	6650 2400 4550 2400
 Wire Wire Line
@@ -1063,7 +1052,7 @@ Wire Wire Line
 	4550 2100 5150 2100
 Connection ~ 9050 5350
 Wire Wire Line
-	7200 2300 10400 2300
+	7200 2300 7450 2300
 Connection ~ 8250 6000
 Connection ~ 8250 6200
 Wire Wire Line
@@ -1091,7 +1080,7 @@ Wire Wire Line
 Wire Wire Line
 	8150 6200 8250 6200
 Wire Wire Line
-	7200 2500 10400 2500
+	7200 2500 7650 2500
 Wire Wire Line
 	5150 2200 4550 2200
 Wire Wire Line
@@ -1109,14 +1098,10 @@ Wire Wire Line
 Wire Wire Line
 	5650 2600 5650 2450
 Wire Wire Line
-	5650 2450 6000 2450
+	5650 2450 5800 2450
 Connection ~ 5800 2450
 Wire Wire Line
-	1950 1150 3050 1150
-Wire Wire Line
-	1950 1250 3050 1250
-Wire Wire Line
-	6250 5450 6700 5450
+	6250 5450 6350 5450
 Wire Wire Line
 	5650 5950 5650 6100
 Connection ~ 5300 5950
@@ -1128,7 +1113,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 6600 5300 6500
 Wire Wire Line
-	6350 6100 6350 5350
+	6350 6100 6350 5950
 Connection ~ 6350 5950
 Wire Wire Line
 	10350 3250 10400 3250
@@ -1149,7 +1134,7 @@ Wire Wire Line
 Wire Wire Line
 	4550 5000 4550 5100
 Wire Wire Line
-	2900 2650 2900 5100
+	2900 2650 2900 2750
 Wire Wire Line
 	2900 3150 3050 3150
 Wire Wire Line
@@ -1191,10 +1176,10 @@ Wire Wire Line
 Wire Wire Line
 	4000 6600 4000 6500
 Wire Wire Line
-	3700 5950 5750 5950
+	3700 5950 4000 5950
 Connection ~ 4300 5950
 Wire Wire Line
-	2800 5450 5750 5450
+	2800 5450 3200 5450
 Wire Wire Line
 	2650 5100 2650 5050
 Wire Wire Line
@@ -1210,7 +1195,7 @@ Wire Wire Line
 Wire Wire Line
 	3050 3450 2750 3450
 Wire Wire Line
-	2900 1850 2900 2450
+	2900 1850 2900 1950
 Wire Wire Line
 	2900 2450 3050 2450
 Wire Wire Line
@@ -1229,7 +1214,7 @@ Wire Wire Line
 	3050 1950 2900 1950
 Connection ~ 2900 1950
 Wire Wire Line
-	5100 3750 5100 4250
+	5100 3750 5100 3850
 Wire Wire Line
 	5100 3750 5000 3750
 Connection ~ 5100 4150
@@ -1263,18 +1248,18 @@ Wire Wire Line
 	7650 2200 7650 2500
 Connection ~ 7650 2500
 Wire Wire Line
-	7850 2200 7850 3950
+	7850 2200 7850 2400
 Wire Wire Line
 	7850 2400 10400 2400
 Connection ~ 7850 2400
 Wire Wire Line
 	7850 4700 7850 4350
 Wire Wire Line
-	7650 1550 7650 1700
+	7650 1550 7650 1650
 Wire Wire Line
 	7850 1650 7850 1700
 Wire Wire Line
-	7450 1650 7850 1650
+	7450 1650 7650 1650
 Connection ~ 7650 1650
 Wire Wire Line
 	7450 1650 7450 1700
@@ -1293,11 +1278,11 @@ Wire Wire Line
 Wire Wire Line
 	9550 3150 9550 2850
 Wire Wire Line
-	7200 3700 8450 3700
+	7200 3700 8350 3700
 Wire Wire Line
-	8350 3200 8350 3100
+	8350 3200 8350 3150
 Wire Wire Line
-	7550 2600 8450 2600
+	7550 2600 8350 2600
 Wire Wire Line
 	10400 2750 9350 2750
 Wire Wire Line
@@ -1307,7 +1292,7 @@ Wire Wire Line
 Wire Wire Line
 	8600 3000 8600 3150
 Wire Wire Line
-	8600 3150 8150 3150
+	8600 3150 8350 3150
 Connection ~ 8350 3150
 Wire Wire Line
 	8150 4700 8150 4350
@@ -1322,7 +1307,7 @@ Connection ~ 8350 3700
 Wire Wire Line
 	4550 3050 4700 3050
 Wire Wire Line
-	4700 2850 4700 3150
+	4700 2850 4700 2950
 Connection ~ 4700 3050
 Connection ~ 4700 2950
 Wire Wire Line
@@ -1334,19 +1319,19 @@ Wire Wire Line
 Wire Wire Line
 	9450 4500 9450 4450
 Wire Wire Line
-	9300 3800 10400 3800
+	9300 3800 10200 3800
 Wire Wire Line
 	10200 3800 10200 3950
 Wire Wire Line
-	9300 3700 10400 3700
+	9300 3700 9950 3700
 Wire Wire Line
 	9950 3700 9950 3950
 Wire Wire Line
-	9300 3600 10400 3600
+	9300 3600 9700 3600
 Wire Wire Line
 	9700 3600 9700 3950
 Wire Wire Line
-	9300 3500 10400 3500
+	9300 3500 9450 3500
 Wire Wire Line
 	9450 3500 9450 3950
 Wire Wire Line
@@ -1356,7 +1341,7 @@ Connection ~ 9700 3600
 Connection ~ 9950 3700
 Connection ~ 10200 3800
 Wire Wire Line
-	9450 4900 10500 4900
+	9450 4900 9700 4900
 Connection ~ 9700 4900
 Connection ~ 9950 4900
 Connection ~ 10200 4900
@@ -1378,7 +1363,7 @@ L tinkerforge:C C26
 U 1 1 5424767C
 P 10700 4400
 F 0 "C26" V 10650 4200 50  0000 L CNN
-F 1 "1nF/2kV" V 10650 4450 50  0000 L CNN
+F 1 "1nF/2kV" V 10550 4200 50  0000 L CNN
 F 2 "C1206" H 10700 4400 60  0001 C CNN
 F 3 "" H 10700 4400 60  0001 C CNN
 	1    10700 4400
@@ -1387,7 +1372,7 @@ $EndComp
 Wire Wire Line
 	10400 4000 10400 4400
 Wire Wire Line
-	10400 4400 10500 4400
+	10400 4400 10450 4400
 $Comp
 L tinkerforge:GND #PWR039
 U 1 1 5424788F
@@ -1426,54 +1411,172 @@ F 3 "" H 2900 850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 600  2900 600 
+	2500 600  2600 600 
 Connection ~ 2600 600 
+Wire Wire Line
+	4000 5950 4000 6100
+Wire Wire Line
+	4000 5950 4300 5950
+Wire Wire Line
+	5650 5950 5750 5950
+Wire Wire Line
+	6350 5450 6700 5450
+Wire Wire Line
+	6350 5450 6350 5350
+Wire Wire Line
+	6650 2450 6650 2800
+Wire Wire Line
+	5800 2450 6000 2450
+Wire Wire Line
+	5300 5950 5650 5950
+Wire Wire Line
+	3200 5450 5750 5450
+Wire Wire Line
+	6350 5950 6350 5450
+Wire Wire Line
+	2900 3150 2900 3550
+Wire Wire Line
+	2900 3050 2900 3150
+Wire Wire Line
+	2900 2950 2900 3050
+Wire Wire Line
+	2900 2850 2900 2950
+Wire Wire Line
+	2900 2750 2900 2850
+Wire Wire Line
+	2900 3550 2900 5100
+Wire Wire Line
+	4950 5950 5300 5950
+Wire Wire Line
+	4600 5950 4950 5950
+Wire Wire Line
+	4300 5950 4600 5950
+Wire Wire Line
+	2900 2350 2900 2450
+Wire Wire Line
+	2900 2250 2900 2350
+Wire Wire Line
+	2900 2150 2900 2250
+Wire Wire Line
+	2900 2050 2900 2150
+Wire Wire Line
+	2900 1950 2900 2050
+Wire Wire Line
+	5100 4150 5100 4250
+Wire Wire Line
+	5100 3850 5100 3950
+Wire Wire Line
+	5100 3950 5100 4050
+Wire Wire Line
+	5100 4050 5100 4150
+Wire Wire Line
+	7450 2300 10400 2300
+Wire Wire Line
+	7650 2500 10400 2500
+Wire Wire Line
+	7850 2400 7850 3950
+Wire Wire Line
+	7650 1650 7650 1700
+Wire Wire Line
+	7650 1650 7850 1650
+Wire Wire Line
+	8350 3150 8350 3100
+Wire Wire Line
+	8350 3150 8150 3150
+Wire Wire Line
+	8350 2600 8450 2600
+Wire Wire Line
+	8350 3700 8450 3700
+Wire Wire Line
+	4700 3050 4700 3150
+Wire Wire Line
+	4700 2950 4700 3050
+Wire Wire Line
+	9450 3500 10400 3500
+Wire Wire Line
+	9700 3600 10400 3600
+Wire Wire Line
+	9950 3700 10400 3700
+Wire Wire Line
+	10200 3800 10400 3800
+Wire Wire Line
+	9700 4900 9950 4900
+Wire Wire Line
+	9950 4900 10200 4900
+Wire Wire Line
+	10200 4900 10450 4900
+Wire Wire Line
+	10450 4900 10500 4900
+Wire Wire Line
+	2600 1250 3050 1250
+Wire Wire Line
+	2900 1150 3050 1150
+Wire Wire Line
+	2600 600  2900 600 
+Text GLabel 10450 5000 3    60   Input ~ 0
+GNDPWR
+Text GLabel 10450 4450 3    60   Input ~ 0
+SHD
+Wire Wire Line
+	10450 4450 10450 4400
+Connection ~ 10450 4400
+Wire Wire Line
+	10450 4400 10500 4400
 $Comp
-L tinkerforge:Filter-8x FILTER1
-U 1 1 5509AE17
-P 1650 1500
-F 0 "FILTER1" H 1550 1950 60  0000 C CNN
-F 1 "Filter-8x" V 1650 1600 60  0000 C CNN
-F 2 "DFN16-33x135" H 1650 1500 60  0001 C CNN
-F 3 "" H 1650 1500 60  0000 C CNN
-	1    1650 1500
-	-1   0    0    -1  
+L tinkerforge:R_PACK4 RP101
+U 1 1 5FA941D2
+P 1650 1300
+F 0 "RP101" H 1650 1750 40  0000 C CNN
+F 1 "82" H 1650 1500 40  0000 C CNN
+F 2 "kicad-libraries:4X0402" H 1650 1300 60  0001 C CNN
+F 3 "" H 1650 1300 60  0001 C CNN
+	1    1650 1300
+	1    0    0    1   
+$EndComp
+$Comp
+L tinkerforge:R R102
+U 1 1 5FA9A249
+P 1650 1250
+F 0 "R102" V 1650 1150 50  0000 C CNN
+F 1 "DNP" V 1650 1350 50  0000 C CNN
+F 2 "kicad-libraries:R0402E" H 1650 1250 60  0001 C CNN
+F 3 "" H 1650 1250 60  0001 C CNN
+	1    1650 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L tinkerforge:R R101
+U 1 1 5FA9BACE
+P 1650 1150
+F 0 "R101" V 1650 1050 50  0000 C CNN
+F 1 "1k" V 1650 1250 50  0000 C CNN
+F 2 "kicad-libraries:R0402E" H 1650 1150 60  0001 C CNN
+F 3 "" H 1650 1150 60  0001 C CNN
+	1    1650 1150
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1950 1350 3050 1350
+	1150 1150 1400 1150
 Wire Wire Line
-	3050 1450 1950 1450
+	1150 1250 1400 1250
 Wire Wire Line
-	1950 1550 3050 1550
+	1900 1250 2600 1250
 Wire Wire Line
-	3050 1650 1950 1650
+	1900 1150 2900 1150
 Wire Wire Line
-	1150 1650 1350 1650
+	1150 1350 1450 1350
 Wire Wire Line
-	1350 1550 1150 1550
+	1150 1450 1450 1450
 Wire Wire Line
-	1150 1450 1350 1450
+	1150 1550 1450 1550
 Wire Wire Line
-	1350 1350 1150 1350
+	1150 1650 1450 1650
 Wire Wire Line
-	1150 1250 1350 1250
+	1850 1650 3050 1650
 Wire Wire Line
-	1350 1150 1150 1150
-$Comp
-L tinkerforge:GND #PWR040
-U 1 1 5509C83F
-P 1650 2100
-F 0 "#PWR040" H 1650 2100 30  0001 C CNN
-F 1 "GND" H 1650 2030 30  0001 C CNN
-F 2 "" H 1650 2100 60  0001 C CNN
-F 3 "" H 1650 2100 60  0001 C CNN
-	1    1650 2100
-	1    0    0    -1  
-$EndComp
+	1850 1550 3050 1550
 Wire Wire Line
-	1650 2100 1650 2050
-NoConn ~ 1950 1850
-NoConn ~ 1950 1750
-NoConn ~ 1350 1750
-NoConn ~ 1350 1850
+	1850 1450 3050 1450
+Wire Wire Line
+	1850 1350 3050 1350
 $EndSCHEMATC
